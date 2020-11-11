@@ -1,0 +1,80 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url("bk.jpg");
+    background-repeat: no-repeat;;
+    background-size: cover;
+}
+
+/* div contenitore totale opaco */
+body > div:first-child{
+  height: 850px;
+  width: 1200px;
+  border-radius: 2%;
+  margin: 40px auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* secondo contenitore invisibile con padding */
+div > div:first-child{
+  padding: 90px 120px;
+}
+
+/* testata */
+header{
+    text-align: center;
+    padding: 0px 0px 4px;
+    color: 	rgb(0, 221, 0);
+}
+
+/* dimension logo */
+header >img{
+    width: 25%;
+}
+
+/* stile barra prenotazioni */
+nav{
+    background-color: rgb(0, 221, 0);
+    padding: 10px;
+    text-align: center;
+}
+
+main{
+  color: white;
+}
+
+section{
+  padding: 18px 0px;
+}
+
+/* grandezza nomi monopattini (non di tipo 'h', non in grassetto) */
+section >div:first-child{
+  font-size: 25px;
+}
+
+/* impostazioni barra caricamento comuni */
+section > div:nth-child(4){
+  margin: 4px 0 0;
+  border-radius: 5px;
+  min-height: 30px;
+}
+
+/* impostazioni barra caricamento personalizzate */
+#caricagino22{
+  max-width: 35%;
+  background-color: orange;
+}
+
+#caricamike24{
+  max-width: 60%;
+  background-color: rgb(0, 221, 0);
+}
+
+#caricafede154{
+  max-width: 14%;
+  background-color: red;
+}
